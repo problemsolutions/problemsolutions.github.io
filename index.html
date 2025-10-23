@@ -3,26 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Problem Solutions - Software development excellence since 2004.">
-    <title>Problem Solutions</title>
+    <meta name="description" content="Problem Solutions - Software development excellence since 2004. Enabling the Augmented Enterprise with AI integration and enterprise solutions.">
+    <title>Problem Solutions - Enabling the Augmented Enterprise</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Problem Solutions - Enabling the Augmented Enterprise">
+    <meta property="og:description" content="Software development excellence since 2004. Enterprise solutions, AI integration, and 20+ years of trusted expertise.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://problemsolutions.github.io">
+    <meta property="og:image" content="https://problemsolutions.net/wp-content/uploads/2023/04/ps_logo_blue_white.svg">
+    <meta property="og:site_name" content="Problem Solutions">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@prob_sols">
+    <meta name="twitter:title" content="Problem Solutions - Enabling the Augmented Enterprise">
+    <meta name="twitter:description" content="Software development excellence since 2004. Enterprise solutions, AI integration, and 20+ years of trusted expertise.">
+    <meta name="twitter:image" content="https://problemsolutions.net/wp-content/uploads/2023/04/ps_logo_blue_white.svg">
+
+    <link rel="icon" type="image/x-icon" href="https://problemsolutions.net/wp-content/uploads/2023/04/cropped-favicon-32x32.png">
+    <link rel="preload" href="https://problemsolutions.net/wp-content/uploads/2023/04/ps_logo_blue_white.svg" as="image">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; background: linear-gradient(to bottom, #111 0%, #111 50%, transparent 100%), linear-gradient(135deg, #764ba2 0%, #0056A7 50%, #764ba2 100%); background-size: 100% 100%, 200% 200%; color: #fff; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+        .container { text-align: center; max-width: 600px; }
+        .logo { max-width: 280px; width: 100%; height: auto; margin-bottom: 3rem; }
+    </style>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <img src="https://problemsolutions.net/wp-content/uploads/2023/04/ps_logo_blue_white.svg" alt="Problem Solutions" class="logo">
-        <p class="tagline">Enabling the Augmented Enterprise</p>
+        <p class="tagline" id="rotating-tagline">Enabling the Augmented Enterprise</p>
+
+        <div class="value-props">
+            <span class="prop-item">Enterprise Solutions</span>
+            <span class="prop-divider">•</span>
+            <span class="prop-item">AI Integration</span>
+            <span class="prop-divider">•</span>
+            <span class="prop-item">20+ Years</span>
+        </div>
+
         <a href="https://www.problemsolutions.net" class="cta-button">Visit Website</a>
 
         <div class="contact-info">
-            <a href="tel:8883430569" class="contact-item">
+            <div class="contact-item" data-copy="8883430569">
                 <i class="fas fa-phone"></i>
                 888.343.0569
-            </a>
-            <a href="mailto:contact@problemsolutions.net" class="contact-item">
+                <span class="copy-feedback">Copied!</span>
+            </div>
+            <div class="contact-item" data-copy="contact@problemsolutions.net">
                 <i class="fas fa-envelope"></i>
                 contact@problemsolutions.net
-            </a>
+                <span class="copy-feedback">Copied!</span>
+            </div>
         </div>
 
         <div class="social-links">
@@ -40,5 +75,40 @@
             </a>
         </div>
     </div>
+    <script>
+        // Copy to clipboard functionality
+        document.querySelectorAll('.contact-item').forEach(item => {
+            item.addEventListener('click', async () => {
+                const textToCopy = item.getAttribute('data-copy');
+                try {
+                    await navigator.clipboard.writeText(textToCopy);
+                    item.classList.add('copied');
+                    setTimeout(() => item.classList.remove('copied'), 2000);
+                } catch (err) {
+                    console.error('Failed to copy:', err);
+                }
+            });
+        });
+
+        // Tagline rotation
+        const taglines = [
+            'Enabling the Augmented Enterprise',
+            'We Make AI Usable',
+            'Software Excellence Since 2004'
+        ];
+        let currentTagline = 0;
+        const taglineElement = document.getElementById('rotating-tagline');
+
+        function rotateTagline() {
+            taglineElement.style.opacity = '0';
+            setTimeout(() => {
+                currentTagline = (currentTagline + 1) % taglines.length;
+                taglineElement.textContent = taglines[currentTagline];
+                taglineElement.style.opacity = '1';
+            }, 500);
+        }
+
+        setInterval(rotateTagline, 4000);
+    </script>
 </body>
 </html>
