@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" class="no-js">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+			<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=i.length;r<a;r++)ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"))}for(var n=document.querySelectorAll("video"),r=0,a=n.length;r<a;r++)ewwwAttr(n[r],"poster",e?n[r].getAttribute("data-poster-webp"):n[r].getAttribute("data-poster-image"));for(var o,l=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=l.length;r<a;r++)e&&(ewwwAttr(l[r],"data-lazy-srcset",l[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(l[r],"data-srcset",l[r].getAttribute("data-srcset-webp")),ewwwAttr(l[r],"data-lazy-src",l[r].getAttribute("data-lazy-src-webp")),ewwwAttr(l[r],"data-src",l[r].getAttribute("data-src-webp")),ewwwAttr(l[r],"data-orig-file",l[r].getAttribute("data-webp-orig-file")),ewwwAttr(l[r],"data-medium-file",l[r].getAttribute("data-webp-medium-file")),ewwwAttr(l[r],"data-large-file",l[r].getAttribute("data-webp-large-file")),null!=(o=l[r].getAttribute("srcset"))&&!1!==o&&o.includes("R0lGOD")&&ewwwAttr(l[r],"src",l[r].getAttribute("data-lazy-src-webp"))),l[r].className=l[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var s=document.querySelectorAll(".ewww_webp"),r=0,a=s.length;r<a;r++)e?(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-webp")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-webp")),ewwwAttr(s[r],"data-orig-file",s[r].getAttribute("data-webp-orig-file")),ewwwAttr(s[r],"data-medium-file",s[r].getAttribute("data-webp-medium-file")),ewwwAttr(s[r],"data-large-file",s[r].getAttribute("data-webp-large-file")),ewwwAttr(s[r],"data-large_image",s[r].getAttribute("data-webp-large_image")),ewwwAttr(s[r],"data-src",s[r].getAttribute("data-webp-src"))):(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-img")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-img"))),s[r].className=s[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><meta name='robots' content='noindex, follow' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/26bb9dc23143974d97213713/script.js"></script>
+	<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Page not found - Problem Solutions</title>
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:title" content="Page not found - Problem Solutions" />
+	<meta property="og:site_name" content="Problem Solutions" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://problemsolutions.net/#website","url":"https://problemsolutions.net/","name":"Problem Solutions","description":"Problem Solutions meets our clients at the intersection of the physical and digital.  Specializing in Artificial Intelligence (AI) and immersive technologies that drive business results.","publisher":{"@id":"https://problemsolutions.net/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://problemsolutions.net/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://problemsolutions.net/#organization","name":"Problem Solutions","url":"https://problemsolutions.net/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://problemsolutions.net/#/schema/logo/image/","url":"https://problemsolutions.net/wp-content/uploads/2023/04/ps_logo_blue_white.svg","contentUrl":"https://problemsolutions.net/wp-content/uploads/2023/04/ps_logo_blue_white.svg","width":2000,"height":504,"caption":"Problem Solutions"},"image":{"@id":"https://problemsolutions.net/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Problem Solutions &raquo; Feed" href="https://problemsolutions.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Problem Solutions &raquo; Comments Feed" href="https://problemsolutions.net/comments/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v9.10.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-PERK3GSZV4"  data-cfasync="false" data-wpfc-render="false" async></script>
+			<script data-cfasync="false" data-wpfc-render="false">
+				var mi_version = '9.10.1';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/problemsolutions.net\/wp-content\/uploads\/2023\/04\/cropped-favicon-32x32.png\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-PERK3GSZV4',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-PERK3GSZV4', {"forceSSL":"true","link_attribution":"true","page_path":'\/404.html?page=' + document.location.pathname + document.location.search + '&from=' + document.referrer} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+							<!-- / Google Analytics by MonsterInsights -->
+		<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/problemsolutions.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://problemsolutions.net/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='ce4wp-subscribe-style-inline-css'>
+.wp-block-ce4wp-subscribe{max-width:840px;margin:0 auto}.wp-block-ce4wp-subscribe .title{margin-bottom:0}.wp-block-ce4wp-subscribe .subTitle{margin-top:0;font-size:0.8em}.wp-block-ce4wp-subscribe .disclaimer{margin-top:5px;font-size:0.8em}.wp-block-ce4wp-subscribe .disclaimer .disclaimer-label{margin-left:10px}.wp-block-ce4wp-subscribe .inputBlock{width:100%;margin-bottom:10px}.wp-block-ce4wp-subscribe .inputBlock input{width:100%}.wp-block-ce4wp-subscribe .inputBlock label{display:inline-block}.wp-block-ce4wp-subscribe .submit-button{margin-top:25px;display:block}.wp-block-ce4wp-subscribe .required-text{display:inline-block;margin:0;padding:0;margin-left:0.3em}.wp-block-ce4wp-subscribe .onSubmission{height:0;max-width:840px;margin:0 auto}.wp-block-ce4wp-subscribe .firstNameSummary .lastNameSummary{text-transform:capitalize}.wp-block-ce4wp-subscribe .ce4wp-inline-notification{display:flex;flex-direction:row;align-items:center;padding:13px 10px;width:100%;height:40px;border-style:solid;border-color:orange;border-width:1px;border-left-width:4px;border-radius:3px;background:rgba(255,133,15,0.1);flex:none;order:0;flex-grow:1;margin:0px 0px}.wp-block-ce4wp-subscribe .ce4wp-inline-warning-text{font-style:normal;font-weight:normal;font-size:16px;line-height:20px;display:flex;align-items:center;color:#571600;margin-left:9px}.wp-block-ce4wp-subscribe .ce4wp-inline-warning-icon{color:orange}.wp-block-ce4wp-subscribe .ce4wp-inline-warning-arrow{color:#571600;margin-left:auto}.wp-block-ce4wp-subscribe .ce4wp-banner-clickable{cursor:pointer}.ce4wp-link{cursor:pointer}
+
+.no-flex{display:block}.sub-header{margin-bottom:1em}
+
+
+</style>
+<link rel='stylesheet' id='mediaelement-css' href='https://problemsolutions.net/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://problemsolutions.net/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.8.3' media='all' />
+<style id='jetpack-sharing-buttons-style-inline-css'>
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #FFF;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--accent: #999999;--wp--preset--color--dark-gray: #111;--wp--preset--color--light-gray: #767676;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='elementor-frontend-css' href='https://problemsolutions.net/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1765761180' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://problemsolutions.net/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.33.4' media='all' />
+<link rel='stylesheet' id='the7_horizontal-menu-css' href='https://problemsolutions.net/wp-content/themes/dt-the7/css/compatibility/elementor/the7-horizontal-menu-widget.min.css?ver=12.3.1' media='all' />
+<link rel='stylesheet' id='the7-e-sticky-effect-css' href='https://problemsolutions.net/wp-content/themes/dt-the7/css/compatibility/elementor/the7-sticky-effects.min.css?ver=12.3.1' media='all' />
+<link rel='stylesheet' id='widget-spacer-css' href='https://problemsolutions.net/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.33.4' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://problemsolutions.net/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.33.4' media='all' />
+<link rel='stylesheet' id='the7-vertical-menu-widget-css' href='https://problemsolutions.net/wp-content/themes/dt-the7/css/compatibility/elementor/the7-vertical-menu-widget.min.css?ver=12.3.1' media='all' />
+<link rel='stylesheet' id='the7-icon-widget-css' href='https://problemsolutions.net/wp-content/themes/dt-the7/css/compatibility/elementor/the7-icon-widget.min.css?ver=12.3.1' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://problemsolutions.net/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.44.0' media='all' />
+<link rel='stylesheet' id='elementor-post-8-css' href='https://problemsolutions.net/wp-content/uploads/elementor/css/post-8.css?ver=1765761181' media='all' />
+<link rel='stylesheet' id='elementor-post-50845-css' href='https://problemsolutions.net/wp-content/uploads/elementor/css/post-50845.css?ver=1765761182' media='all' />
+<link rel='stylesheet' id='elementor-post-21569-css' href='https://problemsolutions.net/wp-content/uploads/elementor/css/post-21569.css?ver=1765761182' media='all' />
+<link rel='stylesheet' id='elementor-post-25157-css' href='https://problemsolutions.net/wp-content/uploads/elementor/css/post-25157.css?ver=1765765035' media='all' />
+<link rel='stylesheet' id='dt-main-css' href='https://problemsolutions.net/wp-content/themes/dt-the7/css/main.min.css?ver=12.3.1' media='all' />
+<style id='dt-main-inline-css'>
+body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,rgba(0,0,0,0.12));
+}
+
+</style>
+<link rel='stylesheet' id='the7-custom-scrollbar-css' href='https://problemsolutions.net/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=12.3.1' media='all' />
+<link rel='stylesheet' id='the7-css-vars-css' href='https://problemsolutions.net/wp-content/uploads/the7-css/css-vars.css?ver=05837c7b6934' media='all' />
+<link rel='stylesheet' id='dt-custom-css' href='https://problemsolutions.net/wp-content/uploads/the7-css/custom.css?ver=05837c7b6934' media='all' />
+<link rel='stylesheet' id='dt-media-css' href='https://problemsolutions.net/wp-content/uploads/the7-css/media.css?ver=05837c7b6934' media='all' />
+<link rel='stylesheet' id='the7-mega-menu-css' href='https://problemsolutions.net/wp-content/uploads/the7-css/mega-menu.css?ver=05837c7b6934' media='all' />
+<link rel='stylesheet' id='the7-elements-css' href='https://problemsolutions.net/wp-content/uploads/the7-css/post-type-dynamic.css?ver=05837c7b6934' media='all' />
+<link rel='stylesheet' id='style-css' href='https://problemsolutions.net/wp-content/themes/dt-the7/style.css?ver=12.3.1' media='all' />
+<link rel='stylesheet' id='the7-elementor-global-css' href='https://problemsolutions.net/wp-content/themes/dt-the7/css/compatibility/elementor/elementor-global.min.css?ver=12.3.1' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-dmsans-css' href='https://problemsolutions.net/wp-content/uploads/elementor/google-fonts/css/dmsans.css?ver=1742775146' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-sora-css' href='https://problemsolutions.net/wp-content/uploads/elementor/google-fonts/css/sora.css?ver=1742775151' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-assistant-css' href='https://problemsolutions.net/wp-content/uploads/elementor/google-fonts/css/assistant.css?ver=1742775155' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-inter-css' href='https://problemsolutions.net/wp-content/uploads/elementor/google-fonts/css/inter.css?ver=1742775301' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://problemsolutions.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://problemsolutions.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://problemsolutions.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' media='all' />
+<script src="https://problemsolutions.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://problemsolutions.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://problemsolutions.net/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=9.10.1" id="monsterinsights-frontend-script-js" async data-wp-strategy="async"></script>
+<script data-cfasync="false" data-wpfc-render="false" id='monsterinsights-frontend-script-js-extra'>var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/problemsolutions.net","hash_tracking":"false","v4_id":"G-PERK3GSZV4"};</script>
+<script id="dt-above-fold-js-extra">
+var dtLocal = {"themeUrl":"https:\/\/problemsolutions.net\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":null,"ajaxurl":"https:\/\/problemsolutions.net\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"https:\/\/problemsolutions.net\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"dba84d43b6","pageData":"","themeSettings":{"smoothScroll":"off","lazyLoading":false,"desktopHeader":{"height":""},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":94,"showMenu":false,"height":64,"logo":{"showLogo":true,"html":"","url":"https:\/\/problemsolutions.net\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":1150,"secondSwitchPoint":600,"firstSwitchPointHeight":60,"secondSwitchPointHeight":50,"mobileToggleCaptionEnabled":"right","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":""}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":""}},"sidebar":{"switchPoint":992},"boxedWidth":"1280px"},"elementor":{"settings":{"container_width":1350}}};
+var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Share on X","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp"},"overlayOpacity":"90"};
+</script>
+<script src="https://problemsolutions.net/wp-content/themes/dt-the7/js/above-the-fold.min.js?ver=12.3.1" id="dt-above-fold-js"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Google Analytics snippet added by Site Kit -->
+<script src="https://www.googletagmanager.com/gtag/js?id=GT-M6XV4ZDT" id="google_gtagjs-js" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["problemsolutions.net"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-M6XV4ZDT");
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); };
+</script>
+<link rel="https://api.w.org/" href="https://problemsolutions.net/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://problemsolutions.net/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.3" />
+<meta name="generator" content="Site Kit by Google 1.167.0" /><script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('lAxoEaKvK1W4OYGd'); </script>	<style>img#wpstats{display:none}</style>
+		<meta name="generator" content="Elementor 3.33.4; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MX7LSJ2W');</script>
+<!-- End Google Tag Manager -->
+
+<meta name="google-site-verification" content="HKmH6cBO4ey1Ty_xmQfE-CsfjaVD_YPaWZ7rFwp6VFY" />
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style><style>.wp-block-gallery.is-cropped .blocks-gallery-item picture{height:100%;width:100%;}</style>
+<!-- Google Tag Manager snippet added by Site Kit -->
+<script>
+			( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-P28XXRW3' );
+			
+</script>
+
+<!-- End Google Tag Manager snippet added by Site Kit -->
+<script type="text/javascript" id="the7-loader-script">
+document.addEventListener("DOMContentLoaded", function(event) {
+	var load = document.getElementById("load");
+	if(!load.classList.contains('loader-removed')){
+		var removeLoading = setTimeout(function() {
+			load.className += " loader-removed";
+		}, 300);
+	}
+});
+</script>
+		<style id='the7-custom-inline-css' type='text/css'>
+.sub-nav .menu-item i.fa,
+.sub-nav .menu-item i.fas,
+.sub-nav .menu-item i.far,
+.sub-nav .menu-item i.fab {
+	text-align: center;
+	width: 1.25em;
+}
+</style>
+</head>
+<body id="the7-body" class="error404 wp-custom-logo wp-embed-responsive wp-theme-dt-the7 the7-core-ver-2.7.12 dt-responsive-on right-mobile-menu-close-icon ouside-menu-close-icon mobile-close-right-caption  fade-thin-mobile-menu-close-icon fade-medium-menu-close-icon srcset-enabled btn-flat custom-btn-color custom-btn-hover-color first-switch-logo-left first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on popup-message-style the7-ver-12.3.1 elementor-default elementor-template-full-width elementor-clear-template elementor-kit-8 elementor-page-25157">
+		<!-- Google Tag Manager (noscript) snippet added by Site Kit -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P28XXRW3" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) snippet added by Site Kit -->
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX7LSJ2W"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- The7 12.3.1 -->
+<div id="load" class="spinner-loader">
+	<div class="load-wrap"><style type="text/css">
+    [class*="the7-spinner-animate-"]{
+        animation: spinner-animation 1s cubic-bezier(1,1,1,1) infinite;
+        x:46.5px;
+        y:40px;
+        width:7px;
+        height:20px;
+        fill:var(--the7-beautiful-spinner-color2);
+        opacity: 0.2;
+    }
+    .the7-spinner-animate-2{
+        animation-delay: 0.083s;
+    }
+    .the7-spinner-animate-3{
+        animation-delay: 0.166s;
+    }
+    .the7-spinner-animate-4{
+         animation-delay: 0.25s;
+    }
+    .the7-spinner-animate-5{
+         animation-delay: 0.33s;
+    }
+    .the7-spinner-animate-6{
+         animation-delay: 0.416s;
+    }
+    .the7-spinner-animate-7{
+         animation-delay: 0.5s;
+    }
+    .the7-spinner-animate-8{
+         animation-delay: 0.58s;
+    }
+    .the7-spinner-animate-9{
+         animation-delay: 0.666s;
+    }
+    .the7-spinner-animate-10{
+         animation-delay: 0.75s;
+    }
+    .the7-spinner-animate-11{
+        animation-delay: 0.83s;
+    }
+    .the7-spinner-animate-12{
+        animation-delay: 0.916s;
+    }
+    @keyframes spinner-animation{
+        from {
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
+</style>
+<svg width="75px" height="75px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+	<rect class="the7-spinner-animate-1" rx="5" ry="5" transform="rotate(0 50 50) translate(0 -30)"></rect>
+	<rect class="the7-spinner-animate-2" rx="5" ry="5" transform="rotate(30 50 50) translate(0 -30)"></rect>
+	<rect class="the7-spinner-animate-3" rx="5" ry="5" transform="rotate(60 50 50) translate(0 -30)"></rect>
+	<rect class="the7-spinner-animate-4" rx="5" ry="5" transform="rotate(90 50 50) translate(0 -30)"></rect>
+	<rect class="the7-spinner-animate-5" rx="5" ry="5" transform="rotate(120 50 50) translate(0 -30)"></rect>
+	<rect class="the7-spinner-animate-6" rx="5" ry="5" transform="rotate(150 50 50) translate(0 -30)"></rect>
+	<rect class="the7-spinner-animate-7" rx="5" ry="5" transform="rotate(180 50 50) translate(0 -30)"></rect>
+	<rect class="the7-spinner-animate-8" rx="5" ry="5" transform="rotate(210 50 50) translate(0 -30)"></rect>
+	<rect class="the7-spinner-animate-9" rx="5" ry="5" transform="rotate(240 50 50) translate(0 -30)"></rect>
+	<rect class="the7-spinner-animate-10" rx="5" ry="5" transform="rotate(270 50 50) translate(0 -30)"></rect>
+	<rect class="the7-spinner-animate-11" rx="5" ry="5" transform="rotate(300 50 50) translate(0 -30)"></rect>
+	<rect class="the7-spinner-animate-12" rx="5" ry="5" transform="rotate(330 50 50) translate(0 -30)"></rect>
+</svg></div>
+</div>
+<div id="page" >
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header data-elementor-type="header" data-elementor-id="50845" class="elementor elementor-50845 elementor-location-header" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-968da6e elementor-section-height-min-height the7-e-sticky-row-yes the7-e-sticky-effect-yes elementor-section-full_width the7-e-sticky-overlap-yes elementor-section-content-middle elementor-section-height-default elementor-section-items-middle" data-id="968da6e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;the7_sticky_row&quot;:&quot;yes&quot;,&quot;the7_sticky_effects_offset&quot;:30,&quot;the7_sticky_effects&quot;:&quot;yes&quot;,&quot;the7_sticky_effects_offset_tablet&quot;:30,&quot;the7_sticky_row_overlap&quot;:&quot;yes&quot;,&quot;the7_sticky_row_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;the7_sticky_row_offset&quot;:0,&quot;the7_sticky_effects_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-49473c7" data-id="49473c7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-fa8bc97 the7-inline-image-yes the7-img-sticky-size-effect-yes elementor-widget elementor-widget-image" data-id="fa8bc97" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://problemsolutions.net">
+							<img fetchpriority="high" width="1024" height="258" src="https://problemsolutions.net/wp-content/uploads/2023/04/ps_logo_blue_white.svg" class="attachment-large size-large wp-image-86398" alt="" />								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d76c1a4" data-id="d76c1a4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-18944c0 items-decoration-yes sub-icon_align-side sub-menu-position-tablet-justify toggle-align-right decoration-position-top mob-menu-popup elementor-widget__width-auto parent-item-clickable-yes horizontal-menu--dropdown-tablet decoration-align-height decoration-left-to-right sub-menu-position-left dt-sub-menu_align-left sub-icon_position-right elementor-widget elementor-widget-the7_horizontal-menu" data-id="18944c0" data-element_type="widget" data-settings="{&quot;dropdown_type&quot;:&quot;popup&quot;,&quot;parent_is_clickable&quot;:&quot;yes&quot;,&quot;dropdown&quot;:&quot;tablet&quot;}" data-widget_type="the7_horizontal-menu.default">
+				<div class="elementor-widget-container">
+					<div class="horizontal-menu-wrap"><a class="horizontal-menu-toggle hidden-on-load" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6NzM2ODksInRvZ2dsZSI6ZmFsc2V9"><span class="right menu-toggle-icons" aria-hidden="true" role="presentation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z"></path></svg></span></a><nav class="dt-nav-menu-horizontal--main dt-nav-menu-horizontal__container justify-content-end widget-divider- indicator-off"><ul class="dt-nav-menu-horizontal d-flex flex-row justify-content-end"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-86378 first depth-0"><a href='https://problemsolutions.net/' data-level='1'><span class="item-content"><span class="menu-item-text  "><span class="menu-text">Home</span></span><span class="submenu-indicator" ><span class="submenu-mob-indicator" ></span></span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86381 depth-0"><a href='https://problemsolutions.net/about/' data-level='1'><span class="item-content"><span class="menu-item-text  "><span class="menu-text">About</span></span><span class="submenu-indicator" ><span class="submenu-mob-indicator" ></span></span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86389 depth-0"><a href='https://problemsolutions.net/meet-our-team/' data-level='1'><span class="item-content"><span class="menu-item-text  "><span class="menu-text">Team</span></span><span class="submenu-indicator" ><span class="submenu-mob-indicator" ></span></span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-86382 has-children depth-0 the7-e-mega-menu the7-e-mega-menu-mobile"><a href='https://problemsolutions.net/services/' data-level='1'><span class="item-content"><span class="menu-item-text  "><span class="menu-text">Services</span></span><span class="submenu-indicator" ><span class="submenu-mob-indicator" ></span></span></span></a><ul class="the7-e-sub-nav  the7-e-mega-menu-sub-nav"><li>		<div data-elementor-type="the7-mega-menu" data-elementor-id="86369" class="elementor elementor-86369 the7-e-mega-menu-content the7-e-mega-menu-width-auto" data-elementor-post-type="elementor_library">
+			<div class="elementor-section-wrap">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-2ef0014 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2ef0014" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7a675be" data-id="7a675be" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a582340 img-align-top img-align-mobile-left image-vertical-align-tablet-center image-vertical-align-center slide-h-position-center slide-h-position-mobile-left icon-box-vertical-align-top preserve-img-ratio-cover elementor-widget elementor-widget-the7-elements-simple-posts" data-id="a582340" data-element_type="widget" data-widget_type="the7-elements-simple-posts.default">
+				<div class="elementor-widget-container">
+					<div class="the7-simple-widget-posts the7-elementor-widget the7-elements-simple-posts-a582340 jquery-filter jquery-filter" data-post-limit="-1" data-pagination-mode="none" data-scroll-offset="" aria-live="assertive">			<div class="dt-css-grid custom-pagination-handler" data-columns="{&quot;d&quot;:4,&quot;t&quot;:2,&quot;p&quot;:1,&quot;wd&quot;:&quot;&quot;}">
+									<div class="wf-cell visible ">
+						<article class="post visible wrapper post-78034 our_services type-our_services status-publish has-post-thumbnail hentry">
+
+							<div class="post-content-wrapper">
+																	<div class="the7-simple-post-thumb">
+										<a class="post-thumbnail-rollover layzr-bg img-css-resize-wrapper" aria-label="Post image" href="https://problemsolutions.net/our_services/aistrategy/"><img width="1500" height="1000" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201500%201000&#039;%2F%3E" class="attachment-full size-full preload-me aspect lazy lazy-load" alt="" decoding="async" sizes="(max-width: 1500px) 100vw, 1500px" style="--ratio: 1500 / 1000;" data-src="https://problemsolutions.net/wp-content/uploads/2023/01/ai_brain.jpg" loading="eager" data-srcset="https://problemsolutions.net/wp-content/uploads/2023/01/ai_brain.jpg 1500w, https://problemsolutions.net/wp-content/uploads/2023/01/ai_brain-300x200.jpg 300w, https://problemsolutions.net/wp-content/uploads/2023/01/ai_brain-1024x683.jpg 1024w, https://problemsolutions.net/wp-content/uploads/2023/01/ai_brain-768x512.jpg 768w" /><span class="the7-hover-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm14 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-7 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></span></a>									</div>
+																<div class="post-entry-content">
+									<h5 class="heading"><a href="https://problemsolutions.net/our_services/aistrategy/" rel="bookmark" title="AI Strategy &#038; Readiness" class="post-title">AI Strategy &#038; Readiness</a></h5>								</div>
+							</div>
+						</article>
+					</div>										<div class="wf-cell visible ">
+						<article class="post visible wrapper post-78020 our_services type-our_services status-publish has-post-thumbnail hentry">
+
+							<div class="post-content-wrapper">
+																	<div class="the7-simple-post-thumb">
+										<a class="post-thumbnail-rollover layzr-bg img-css-resize-wrapper" aria-label="Post image" href="https://problemsolutions.net/our_services/immersivetechnology/"><img width="1500" height="1000" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201500%201000&#039;%2F%3E" class="attachment-full size-full preload-me aspect lazy lazy-load" alt="Immersive Technology" decoding="async" sizes="(max-width: 1500px) 100vw, 1500px" style="--ratio: 1500 / 1000;" data-src="https://problemsolutions.net/wp-content/uploads/2023/01/PS-Blogs-Cover-Photos-22.png" loading="eager" data-srcset="https://problemsolutions.net/wp-content/uploads/2023/01/PS-Blogs-Cover-Photos-22.png 1500w, https://problemsolutions.net/wp-content/uploads/2023/01/PS-Blogs-Cover-Photos-22-300x200.png 300w, https://problemsolutions.net/wp-content/uploads/2023/01/PS-Blogs-Cover-Photos-22-1024x683.png 1024w, https://problemsolutions.net/wp-content/uploads/2023/01/PS-Blogs-Cover-Photos-22-768x512.png 768w" /><span class="the7-hover-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm14 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-7 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></span></a>									</div>
+																<div class="post-entry-content">
+									<h5 class="heading"><a href="https://problemsolutions.net/our_services/immersivetechnology/" rel="bookmark" title="Immersive Technology" class="post-title">Immersive Technology</a></h5>								</div>
+							</div>
+						</article>
+					</div>										<div class="wf-cell visible ">
+						<article class="post visible wrapper post-78019 our_services type-our_services status-publish has-post-thumbnail hentry">
+
+							<div class="post-content-wrapper">
+																	<div class="the7-simple-post-thumb">
+										<a class="post-thumbnail-rollover layzr-bg img-css-resize-wrapper" aria-label="Post image" href="https://problemsolutions.net/our_services/softwaredevelopment/"><img width="1500" height="1000" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201500%201000&#039;%2F%3E" class="attachment-full size-full preload-me aspect lazy lazy-load" alt="" decoding="async" sizes="(max-width: 1500px) 100vw, 1500px" style="--ratio: 1500 / 1000;" data-src="https://problemsolutions.net/wp-content/uploads/2023/01/software_engineering.jpg" loading="eager" data-srcset="https://problemsolutions.net/wp-content/uploads/2023/01/software_engineering.jpg 1500w, https://problemsolutions.net/wp-content/uploads/2023/01/software_engineering-300x200.jpg 300w, https://problemsolutions.net/wp-content/uploads/2023/01/software_engineering-1024x683.jpg 1024w, https://problemsolutions.net/wp-content/uploads/2023/01/software_engineering-768x512.jpg 768w" /><span class="the7-hover-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm14 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-7 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></span></a>									</div>
+																<div class="post-entry-content">
+									<h5 class="heading"><a href="https://problemsolutions.net/our_services/softwaredevelopment/" rel="bookmark" title="Software Development" class="post-title">Software Development</a></h5>								</div>
+							</div>
+						</article>
+					</div>										<div class="wf-cell visible ">
+						<article class="post visible wrapper post-78032 our_services type-our_services status-publish has-post-thumbnail hentry">
+
+							<div class="post-content-wrapper">
+																	<div class="the7-simple-post-thumb">
+										<a class="post-thumbnail-rollover layzr-bg img-css-resize-wrapper" aria-label="Post image" href="https://problemsolutions.net/our_services/advisory-support/"><img width="1500" height="1000" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201500%201000&#039;%2F%3E" class="attachment-full size-full preload-me aspect lazy lazy-load" alt="" decoding="async" sizes="(max-width: 1500px) 100vw, 1500px" style="--ratio: 1500 / 1000;" data-src="https://problemsolutions.net/wp-content/uploads/2023/01/transformation.jpg" loading="eager" data-srcset="https://problemsolutions.net/wp-content/uploads/2023/01/transformation.jpg 1500w, https://problemsolutions.net/wp-content/uploads/2023/01/transformation-300x200.jpg 300w, https://problemsolutions.net/wp-content/uploads/2023/01/transformation-1024x683.jpg 1024w, https://problemsolutions.net/wp-content/uploads/2023/01/transformation-768x512.jpg 768w" /><span class="the7-hover-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm14 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-7 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></span></a>									</div>
+																<div class="post-entry-content">
+									<h5 class="heading"><a href="https://problemsolutions.net/our_services/advisory-support/" rel="bookmark" title="Advisory Support" class="post-title">Advisory Support</a></h5>								</div>
+							</div>
+						</article>
+					</div>								</div>
+		</div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+		</li></ul><ul class="the7-e-sub-nav horizontal-sub-nav"><li class="menu-item menu-item-type-post_type menu-item-object-our_services menu-item-86390 first depth-1"><a href='https://problemsolutions.net/our_services/aistrategy/' data-level='2'><span class="item-content"><span class="menu-item-text  "><span class="menu-text">AI Strategy &#038; Readiness</span></span><span class="submenu-indicator" ><i aria-hidden="true" class="desktop-menu-icon fas fa-caret-right"></i><span class="submenu-mob-indicator" ></span></span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-our_services menu-item-86391 depth-1"><a href='https://problemsolutions.net/our_services/immersivetechnology/' data-level='2'><span class="item-content"><span class="menu-item-text  "><span class="menu-text">Immersive Technology</span></span><span class="submenu-indicator" ><i aria-hidden="true" class="desktop-menu-icon fas fa-caret-right"></i><span class="submenu-mob-indicator" ></span></span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-our_services menu-item-86392 depth-1"><a href='https://problemsolutions.net/our_services/softwaredevelopment/' data-level='2'><span class="item-content"><span class="menu-item-text  "><span class="menu-text">Software Development</span></span><span class="submenu-indicator" ><i aria-hidden="true" class="desktop-menu-icon fas fa-caret-right"></i><span class="submenu-mob-indicator" ></span></span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-our_services menu-item-86393 depth-1"><a href='https://problemsolutions.net/our_services/advisory-support/' data-level='2'><span class="item-content"><span class="menu-item-text  "><span class="menu-text">Advisory Support</span></span><span class="submenu-indicator" ><i aria-hidden="true" class="desktop-menu-icon fas fa-caret-right"></i><span class="submenu-mob-indicator" ></span></span></span></a></li> </ul></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89214 depth-0"><a href='https://problemsolutions.net/vectorspark/' data-level='1'><span class="item-content"><span class="menu-item-text  "><span class="menu-text">VectorSpark</span></span><span class="submenu-indicator" ><span class="submenu-mob-indicator" ></span></span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86396 depth-0"><a href='https://problemsolutions.net/blog/' data-level='1'><span class="item-content"><span class="menu-item-text  "><span class="menu-text">Blog</span></span><span class="submenu-indicator" ><span class="submenu-mob-indicator" ></span></span></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86379 last depth-0"><a href='https://problemsolutions.net/contact/' data-level='1'><span class="item-content"><span class="menu-item-text  "><span class="menu-text">Contact</span></span><span class="submenu-indicator" ><span class="submenu-mob-indicator" ></span></span></span></a></li> </ul></nav></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e879f8b elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-the7_button_widget" data-id="e879f8b" data-element_type="widget" data-widget_type="the7_button_widget.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper"><a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijg1ODY1IiwidG9nZ2xlIjpmYWxzZX0%3D" class="box-button elementor-button elementor-size-md">Request a meeting</a></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</header>
+		
+
+<div id="main" class="sidebar-none sidebar-divider-off">
+
+	
+	<div class="main-gradient"></div>
+	<div class="wf-wrap">
+	<div class="wf-container-main">
+
+	
+
+
+	<div id="content" class="content" role="main">
+
+				<div data-elementor-type="error-404" data-elementor-id="25157" class="elementor elementor-25157 elementor-location-single" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-e9f8d0d elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="e9f8d0d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-44221c4" data-id="44221c4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bd356c2 elementor-widget elementor-widget-template" data-id="bd356c2" data-element_type="widget" data-widget_type="template.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-template">
+					<div data-elementor-type="section" data-elementor-id="85113" class="elementor elementor-85113 elementor-location-single" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-52fd32db elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="52fd32db" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-73c19a1f" data-id="73c19a1f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1ff8073 elementor-widget elementor-widget-spacer" data-id="1ff8073" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-aab4e61 elementor-section-full_width elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-middle elementor-section-height-default" data-id="aab4e61" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-73d8122" data-id="73d8122" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b08613b elementor-widget elementor-widget-heading" data-id="b08613b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">404</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-7c0a5e7 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="7c0a5e7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Page not found :(</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d2badb2 elementor-align-center elementor-widget elementor-widget-the7_button_widget" data-id="d2badb2" data-element_type="widget" data-widget_type="the7_button_widget.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper"><a href="https://problemsolutions.net" class="box-button elementor-button elementor-size-lg">Go to homepage<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z"></path></svg></a></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+	</div><!-- #content -->
+
+	
+
+
+			</div><!-- .wf-container -->
+		</div><!-- .wf-wrap -->
+
+	
+	</div><!-- #main -->
+
+	
+
+
+	<!-- !Footer -->
+	<footer id="footer" class="footer solid-bg elementor-footer">
+
+		
+			<div class="wf-wrap">
+				<div class="wf-container-footer">
+					<div class="wf-container">
+								<footer data-elementor-type="footer" data-elementor-id="21569" class="elementor elementor-21569 elementor-location-footer" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-66097d6 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="66097d6" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ff720c0" data-id="ff720c0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b352ca5 elementor-widget elementor-widget-template" data-id="b352ca5" data-element_type="widget" data-widget_type="template.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-template">
+					<div data-elementor-type="section" data-elementor-id="79256" class="elementor elementor-79256 elementor-location-footer" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-62787cea elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="62787cea" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5ee9e2fc" data-id="5ee9e2fc" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3802d4d8 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="3802d4d8" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c85ab34 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c85ab34" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2a5b29b" data-id="2a5b29b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-72879c6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="72879c6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-9d8a1d6" data-id="9d8a1d6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5502a5f elementor-widget elementor-widget-image" data-id="5502a5f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" width="1024" height="258" src="https://problemsolutions.net/wp-content/uploads/2023/04/ps_logo_blue_white.svg" class="attachment-large size-large wp-image-86398" alt="" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-8eee5f6 elementor-widget elementor-widget-spacer" data-id="8eee5f6" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-3eecd7b elementor-widget elementor-widget-text-editor" data-id="3eecd7b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><a href="https://maps.app.goo.gl/5DbTofHg1Wz7XPYC7">1397 EISENHOWER BLVD SUITE 102B, JOHNSTOWN PA 15904</a></p><p>Questions? Reach us<br />Monday – Friday from 9AM to 5PM ET</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-75e8058 elementor-widget elementor-widget-spacer" data-id="75e8058" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e639ab5 elementor-widget elementor-widget-heading" data-id="e639ab5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">(888) 343-0569</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6b985bf elementor-widget elementor-widget-spacer" data-id="6b985bf" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-19c8452 elementor-mobile-align-center elementor-widget elementor-widget-the7_button_widget" data-id="19c8452" data-element_type="widget" data-widget_type="the7_button_widget.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper"><a href="https://problemsolutions.net/contact/" class="box-button elementor-button elementor-size-sm">Request for quote<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg></a></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-ba12a8c" data-id="ba12a8c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4c07226 elementor-widget elementor-widget-heading" data-id="4c07226" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Company</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1d5a0fd elementor-widget elementor-widget-spacer" data-id="1d5a0fd" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-0f9394b dt-nav-menu_align-mobile-center dt-nav-menu_align-left dt-sub-menu_align-left elementor-widget elementor-widget-the7_nav-menu" data-id="0f9394b" data-element_type="widget" data-settings="{&quot;submenu_display&quot;:&quot;on_click&quot;}" data-widget_type="the7_nav-menu.default">
+				<div class="elementor-widget-container">
+					<nav class="dt-nav-menu--main dt-nav-menu__container dt-sub-menu-display-on_click dt-icon-align-with_text dt-icon-position-right dt-sub-icon-position-right dt-sub-icon-align-with_text"><ul class="dt-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86384 first depth-0"><a href='https://problemsolutions.net/about/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">About</span></span></span><span class="right next-level-button" data-icon = "fas fa-caret-down"><i aria-hidden="true" class="open-button fas fa-caret-right"></i> <i aria-hidden="true" class="icon-active fas fa-caret-down"></i></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86388 depth-0"><a href='https://problemsolutions.net/meet-our-team/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Team</span></span></span><span class="right next-level-button" data-icon = "fas fa-caret-down"><i aria-hidden="true" class="open-button fas fa-caret-right"></i> <i aria-hidden="true" class="icon-active fas fa-caret-down"></i></span></a></li> <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88729 depth-0"><a href='https://problemsolutions.net/blog/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Blog</span></span></span><span class="right next-level-button" data-icon = "fas fa-caret-down"><i aria-hidden="true" class="open-button fas fa-caret-right"></i> <i aria-hidden="true" class="icon-active fas fa-caret-down"></i></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86383 last depth-0"><a href='https://problemsolutions.net/contact/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Contact</span></span></span><span class="right next-level-button" data-icon = "fas fa-caret-down"><i aria-hidden="true" class="open-button fas fa-caret-right"></i> <i aria-hidden="true" class="icon-active fas fa-caret-down"></i></span></a></li> </ul></nav>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-69ab12b" data-id="69ab12b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-663c166 elementor-widget elementor-widget-heading" data-id="663c166" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Services</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2a92f04 elementor-widget elementor-widget-spacer" data-id="2a92f04" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e969534 dt-nav-menu_align-mobile-center dt-nav-menu_align-left dt-sub-menu_align-left elementor-widget elementor-widget-the7_nav-menu" data-id="e969534" data-element_type="widget" data-settings="{&quot;submenu_display&quot;:&quot;on_click&quot;}" data-widget_type="the7_nav-menu.default">
+				<div class="elementor-widget-container">
+					<nav class="dt-nav-menu--main dt-nav-menu__container dt-sub-menu-display-on_click dt-icon-align-with_text dt-icon-position-right dt-sub-icon-position-right dt-sub-icon-align-with_text"><ul class="dt-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-our_services menu-item-86376 first depth-0"><a href='https://problemsolutions.net/our_services/aistrategy/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">AI Strategy &#038; Readiness</span></span></span><span class="right next-level-button" data-icon = "fas fa-caret-down"><i aria-hidden="true" class="open-button fas fa-caret-right"></i> <i aria-hidden="true" class="icon-active fas fa-caret-down"></i></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-our_services menu-item-86373 depth-0"><a href='https://problemsolutions.net/our_services/advisory-support/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Advisory Support</span></span></span><span class="right next-level-button" data-icon = "fas fa-caret-down"><i aria-hidden="true" class="open-button fas fa-caret-right"></i> <i aria-hidden="true" class="icon-active fas fa-caret-down"></i></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-our_services menu-item-86375 depth-0"><a href='https://problemsolutions.net/our_services/immersivetechnology/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Immersive Technology</span></span></span><span class="right next-level-button" data-icon = "fas fa-caret-down"><i aria-hidden="true" class="open-button fas fa-caret-right"></i> <i aria-hidden="true" class="icon-active fas fa-caret-down"></i></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-our_services menu-item-86374 last depth-0"><a href='https://problemsolutions.net/our_services/softwaredevelopment/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Software Development</span></span></span><span class="right next-level-button" data-icon = "fas fa-caret-down"><i aria-hidden="true" class="open-button fas fa-caret-right"></i> <i aria-hidden="true" class="icon-active fas fa-caret-down"></i></span></a></li> </ul></nav>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-f2f38ae" data-id="f2f38ae" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b4711a5 elementor-widget elementor-widget-heading" data-id="b4711a5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Connect</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-bbf861f elementor-widget elementor-widget-spacer" data-id="bbf861f" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c2f6159 elementor-widget__width-auto elementor-align-center elementor-widget elementor-widget-the7_icon_widget" data-id="c2f6159" data-element_type="widget" data-widget_type="the7_icon_widget.default">
+				<div class="elementor-widget-container">
+					<div class="the7-icon-wrapper the7-elementor-widget"><a class="elementor-icon" href="https://www.facebook.com/problemsolutionsllc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"></path></svg></a></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1ec7753 elementor-widget__width-auto elementor-align-center elementor-widget elementor-widget-the7_icon_widget" data-id="1ec7753" data-element_type="widget" data-widget_type="the7_icon_widget.default">
+				<div class="elementor-widget-container">
+					<div class="the7-icon-wrapper the7-elementor-widget"><a class="elementor-icon" href="https://twitter.com/prob_sols"><i aria-hidden="true" class="fab fa-twitter"></i></a></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-7717bac elementor-widget__width-auto elementor-align-center elementor-widget elementor-widget-the7_icon_widget" data-id="7717bac" data-element_type="widget" data-widget_type="the7_icon_widget.default">
+				<div class="elementor-widget-container">
+					<div class="the7-icon-wrapper the7-elementor-widget"><a class="elementor-icon" href="https://www.youtube.com/@ProblemSolutions"><i aria-hidden="true" class="fab fa-youtube"></i></a></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-3d5bbac elementor-widget__width-auto elementor-align-center elementor-widget elementor-widget-the7_icon_widget" data-id="3d5bbac" data-element_type="widget" data-widget_type="the7_icon_widget.default">
+				<div class="elementor-widget-container">
+					<div class="the7-icon-wrapper the7-elementor-widget"><a class="elementor-icon" href="https://www.linkedin.com/company/problemsolutions/mycompany/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"></path></svg></a></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7745eda elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7745eda" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-437fefe" data-id="437fefe" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0ac285a elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="0ac285a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>© 2023 Problem Solutions. All Rights Reserved.</p>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-149019e" data-id="149019e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ebfe8c2 elementor-widget__width-initial elementor-widget elementor-widget-button" data-id="ebfe8c2" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://problemsolutions.net/privacy-policy-2/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Privacy Policy</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-80261ef elementor-widget__width-initial elementor-widget elementor-widget-button" data-id="80261ef" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://problemsolutions.net/terms-of-use/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Terms of Use</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</footer>
+							</div><!-- .wf-container -->
+				</div><!-- .wf-container-footer -->
+			</div><!-- .wf-wrap -->
+
+			
+	</footer><!-- #footer -->
+
+			<a href="#" class="scroll-top scroll-top-elementor-icon ">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z"></path></svg>				<span class="screen-reader-text">Go to Top</span>
+			</a>
+			
+</div><!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/dt-the7\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<div data-elementor-type="popup" data-elementor-id="85865" class="elementor elementor-85865 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;fadeIn&quot;,&quot;exit_animation&quot;:&quot;fadeIn&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.29999999999999999,&quot;sizes&quot;:[]},&quot;the7_scrollbar&quot;:&quot;yes&quot;,&quot;prevent_scroll&quot;:&quot;yes&quot;,&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-78521b5a elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="78521b5a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-391828f0" data-id="391828f0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4ff2e9eb elementor-widget__width-auto elementor-absolute elementor-align-center elementor-widget elementor-widget-the7_icon_widget" data-id="4ff2e9eb" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="the7_icon_widget.default">
+				<div class="elementor-widget-container">
+					<div class="the7-icon-wrapper the7-elementor-widget"><a class="elementor-icon" href="#elementor-action%3Aaction%3Dpopup%3Aclose%26settings%3DeyJkb19ub3Rfc2hvd19hZ2FpbiI6IiJ9"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"></path></svg></a></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ec46f9f elementor-widget elementor-widget-heading" data-id="ec46f9f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Book a phone consultation!</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-99b1ae9 elementor-widget elementor-widget-text-editor" data-id="99b1ae9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>One of our practitioners will be delighted to connect.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-32e9c01 elementor-widget elementor-widget-spacer" data-id="32e9c01" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-13e5583 elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="13e5583" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+							<form class="elementor-form" method="post" name="New Form" aria-label="New Form">
+			<input type="hidden" name="post_id" value="85865"/>
+			<input type="hidden" name="form_id" value="13e5583"/>
+			<input type="hidden" name="referer_title" value="Advanced Tracking Fishing Sensors and App - Problem Solutions" />
+
+							<input type="hidden" name="queried_id" value="86864"/>
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-above">
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-field-required">
+												<label for="form-field-name" class="elementor-field-label">
+								Your name							</label>
+														<input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-md  elementor-field-textual" required="required">
+											</div>
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_113021c elementor-col-50">
+												<label for="form-field-field_113021c" class="elementor-field-label">
+								Title							</label>
+														<input size="1" type="text" name="form_fields[field_113021c]" id="form-field-field_113021c" class="elementor-field elementor-size-md  elementor-field-textual">
+											</div>
+								<div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-email elementor-col-50 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label">
+								PHONE NUMBER							</label>
+								<input size="1" type="tel" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-md  elementor-field-textual" required="required" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
+
+						</div>
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-field_7f8e3b8 elementor-col-50 elementor-field-required">
+												<label for="form-field-field_7f8e3b8" class="elementor-field-label">
+								eMail							</label>
+														<input size="1" type="email" name="form_fields[field_7f8e3b8]" id="form-field-field_7f8e3b8" class="elementor-field elementor-size-md  elementor-field-textual" required="required">
+											</div>
+								<div class="elementor-field-type-date elementor-field-group elementor-column elementor-field-group-field_b3007fb elementor-col-50">
+												<label for="form-field-field_b3007fb" class="elementor-field-label">
+								Desired date							</label>
+						
+		<input type="date" name="form_fields[field_b3007fb]" id="form-field-field_b3007fb" class="elementor-field elementor-size-md  elementor-field-textual elementor-date-field" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+						</div>
+								<div class="elementor-field-type-time elementor-field-group elementor-column elementor-field-group-field_b95d6ef elementor-col-50">
+												<label for="form-field-field_b95d6ef" class="elementor-field-label">
+								Desired time							</label>
+								<input type="time" name="form_fields[field_b95d6ef]" id="form-field-field_b95d6ef" class="elementor-field elementor-size-md  elementor-field-textual elementor-time-field">
+						</div>
+								<div class="elementor-field-type-recaptcha_v3 elementor-field-group elementor-column elementor-field-group-field_3fc8f04 elementor-col-100 recaptcha_v3-bottomright">
+					<div class="elementor-field" id="form-field-field_3fc8f04"><div class="elementor-g-recaptcha" data-sitekey="6Ldj520lAAAAANKoqs3GzceT7F80T1howU3IA1lh" data-type="v3" data-action="Form" data-badge="bottomright" data-size="invisible"></div></div>				</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+					<button class="elementor-button elementor-size-lg" type="submit">
+						<span class="elementor-button-content-wrapper">
+																						<span class="elementor-button-text">Request a call-back</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div data-elementor-type="popup" data-elementor-id="73689" class="elementor elementor-73689 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;fadeIn&quot;,&quot;exit_animation&quot;:&quot;fadeIn&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.29999999999999999,&quot;sizes&quot;:[]},&quot;the7_scrollbar&quot;:&quot;yes&quot;,&quot;prevent_scroll&quot;:&quot;yes&quot;,&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-53c57074 elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="53c57074" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7121ae2a" data-id="7121ae2a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-415fb35 elementor-widget__width-auto elementor-absolute elementor-align-center elementor-widget elementor-widget-the7_icon_widget" data-id="415fb35" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="the7_icon_widget.default">
+				<div class="elementor-widget-container">
+					<div class="the7-icon-wrapper the7-elementor-widget"><a class="elementor-icon" href="#elementor-action%3Aaction%3Dpopup%3Aclose%26settings%3DeyJkb19ub3Rfc2hvd19hZ2FpbiI6IiJ9"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"></path></svg></a></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-40b3e73 elementor-widget elementor-widget-image" data-id="40b3e73" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://problemsolutions.net">
+							<img fetchpriority="high" width="1024" height="258" src="https://problemsolutions.net/wp-content/uploads/2023/04/ps_logo_blue_white.svg" class="attachment-large size-large wp-image-86398" alt="" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-6b9c16b dt-nav-menu_align-left dt-sub-menu_align-left elementor-widget elementor-widget-the7_nav-menu" data-id="6b9c16b" data-element_type="widget" data-settings="{&quot;submenu_display&quot;:&quot;on_click&quot;}" data-widget_type="the7_nav-menu.default">
+				<div class="elementor-widget-container">
+					<nav class="dt-nav-menu--main dt-nav-menu__container dt-sub-menu-display-on_click dt-icon-align-with_text dt-icon-position-right dt-sub-icon-position-right dt-sub-icon-align-side"><ul class="dt-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-86378 first depth-0"><a href='https://problemsolutions.net/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Home</span></span></span><span class="right next-level-button" data-icon = ""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 11h14v2H5z"></path></svg></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86381 depth-0"><a href='https://problemsolutions.net/about/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">About</span></span></span><span class="right next-level-button" data-icon = ""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 11h14v2H5z"></path></svg></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86389 depth-0"><a href='https://problemsolutions.net/meet-our-team/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Team</span></span></span><span class="right next-level-button" data-icon = ""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 11h14v2H5z"></path></svg></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-86382 has-children depth-0"><a href='https://problemsolutions.net/services/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Services</span></span></span><span class="right next-level-button" data-icon = ""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 11h14v2H5z"></path></svg></span></a><ul class="the7-e-sub-nav vertical-sub-nav hover-style-bg"><li class="menu-item menu-item-type-post_type menu-item-object-our_services menu-item-86390 first depth-1"><a href='https://problemsolutions.net/our_services/aistrategy/' data-level='2'><span class="item-content"><span class="menu-item-text"><span class="menu-text">AI Strategy &#038; Readiness</span></span></span><span class="right next-level-button" data-icon = ""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 11h14v2H5z"></path></svg></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-our_services menu-item-86391 depth-1"><a href='https://problemsolutions.net/our_services/immersivetechnology/' data-level='2'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Immersive Technology</span></span></span><span class="right next-level-button" data-icon = ""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 11h14v2H5z"></path></svg></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-our_services menu-item-86392 depth-1"><a href='https://problemsolutions.net/our_services/softwaredevelopment/' data-level='2'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Software Development</span></span></span><span class="right next-level-button" data-icon = ""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 11h14v2H5z"></path></svg></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-our_services menu-item-86393 depth-1"><a href='https://problemsolutions.net/our_services/advisory-support/' data-level='2'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Advisory Support</span></span></span><span class="right next-level-button" data-icon = ""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 11h14v2H5z"></path></svg></span></a></li> </ul></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89214 depth-0"><a href='https://problemsolutions.net/vectorspark/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">VectorSpark</span></span></span><span class="right next-level-button" data-icon = ""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 11h14v2H5z"></path></svg></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86396 depth-0"><a href='https://problemsolutions.net/blog/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Blog</span></span></span><span class="right next-level-button" data-icon = ""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 11h14v2H5z"></path></svg></span></a></li> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86379 last depth-0"><a href='https://problemsolutions.net/contact/' data-level='1'><span class="item-content"><span class="menu-item-text"><span class="menu-text">Contact</span></span></span><span class="right next-level-button" data-icon = ""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 11h14v2H5z"></path></svg></span></a></li> </ul></nav>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ccb6914 elementor-align-left elementor-widget elementor-widget-the7_button_widget" data-id="ccb6914" data-element_type="widget" data-widget_type="the7_button_widget.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper"><a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6Ijg1ODY1IiwidG9nZ2xlIjpmYWxzZX0%3D" class="box-button elementor-button elementor-size-lg">Book a consultation</a></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+					<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='stylesheet' id='elementor-post-86369-css' href='https://problemsolutions.net/wp-content/uploads/elementor/css/post-86369.css?ver=1765761182' media='all' />
+<link rel='stylesheet' id='the7-filter-decorations-base-css' href='https://problemsolutions.net/wp-content/themes/dt-the7/css/compatibility/elementor/the7-filter-decorations-base.min.css?ver=12.3.1' media='all' />
+<link rel='stylesheet' id='the7-simple-common-css' href='https://problemsolutions.net/wp-content/themes/dt-the7/css/compatibility/elementor/the7-simple-common.min.css?ver=12.3.1' media='all' />
+<link rel='stylesheet' id='the7-elements-simple-posts-css' href='https://problemsolutions.net/wp-content/themes/dt-the7/css/compatibility/elementor/the7-simple-posts.min.css?ver=12.3.1' media='all' />
+<link rel='stylesheet' id='elementor-post-85113-css' href='https://problemsolutions.net/wp-content/uploads/elementor/css/post-85113.css?ver=1765761206' media='all' />
+<link rel='stylesheet' id='elementor-post-79256-css' href='https://problemsolutions.net/wp-content/uploads/elementor/css/post-79256.css?ver=1765761183' media='all' />
+<link rel='stylesheet' id='widget-divider-css' href='https://problemsolutions.net/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.33.4' media='all' />
+<link rel='stylesheet' id='elementor-post-85865-css' href='https://problemsolutions.net/wp-content/uploads/elementor/css/post-85865.css?ver=1765761183' media='all' />
+<link rel='stylesheet' id='widget-form-css' href='https://problemsolutions.net/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.33.2' media='all' />
+<link rel='stylesheet' id='e-animation-fadeIn-css' href='https://problemsolutions.net/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=3.33.4' media='all' />
+<link rel='stylesheet' id='e-popup-css' href='https://problemsolutions.net/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.33.2' media='all' />
+<link rel='stylesheet' id='flatpickr-css' href='https://problemsolutions.net/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.min.css?ver=4.6.13' media='all' />
+<link rel='stylesheet' id='elementor-post-73689-css' href='https://problemsolutions.net/wp-content/uploads/elementor/css/post-73689.css?ver=1765761183' media='all' />
+<script src="https://problemsolutions.net/wp-content/themes/dt-the7/js/compatibility/elementor/frontend-common.min.js?ver=12.3.1" id="the7-elementor-frontend-common-js"></script>
+<script src="https://problemsolutions.net/wp-content/themes/dt-the7/js/main.min.js?ver=12.3.1" id="dt-main-js"></script>
+<script id="ce4wp_form_submit-js-extra">
+var ce4wp_form_submit_data = {"siteUrl":"https:\/\/problemsolutions.net","url":"https:\/\/problemsolutions.net\/wp-admin\/admin-ajax.php","nonce":"648507c5d9","listNonce":"75f0e82fd8","activatedNonce":"af93ebc2d0"};
+</script>
+<script src="https://problemsolutions.net/wp-content/plugins/creative-mail-by-constant-contact/assets/js/block/submit.js?ver=1715299949" id="ce4wp_form_submit-js"></script>
+<script id="eio-lazy-load-js-before">
+var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"bg_min_dpr":1.1000000000000001,"threshold":0,"use_dpr":1};
+</script>
+<script src="https://problemsolutions.net/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=831" id="eio-lazy-load-js" async data-wp-strategy="async"></script>
+<script src="https://problemsolutions.net/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.33.4" id="elementor-webpack-runtime-js"></script>
+<script src="https://problemsolutions.net/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.33.4" id="elementor-frontend-modules-js"></script>
+<script src="https://problemsolutions.net/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1101,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1100,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.33.4","is_static":false,"experimentalFeatures":{"theme_builder_v2":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"import-export-customization":true,"e_pro_variables":true},"urls":{"assets":"https:\/\/problemsolutions.net\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/problemsolutions.net\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/problemsolutions.net\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"4ded5199c5"},"swiperClass":"swiper","settings":{"editorPreferences":[]},"kit":{"viewport_mobile":767,"viewport_tablet":1100,"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":0,"title":"Page not found - Problem Solutions","excerpt":""}};
+</script>
+<script src="https://problemsolutions.net/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.33.4" id="elementor-frontend-js"></script>
+<script src="https://problemsolutions.net/wp-content/themes/dt-the7/js/compatibility/elementor/the7-horizontal-menu.min.js?ver=12.3.1" id="the7_horizontal-menu-js"></script>
+<script src="https://problemsolutions.net/wp-content/themes/dt-the7/lib/jquery-sticky/jquery-sticky.min.js?ver=12.3.1" id="the7-e-sticky-js"></script>
+<script src="https://problemsolutions.net/wp-content/themes/dt-the7/js/compatibility/elementor/sticky-effects.min.js?ver=12.3.1" id="the7-e-sticky-effect-js"></script>
+<script src="https://problemsolutions.net/wp-content/themes/dt-the7/js/compatibility/elementor/the7-vertical-menu.min.js?ver=12.3.1" id="the7_nav-menu-js"></script>
+<script src="https://problemsolutions.net/wp-content/themes/dt-the7/lib/jquery-mousewheel/jquery-mousewheel.min.js?ver=12.3.1" id="jquery-mousewheel-js"></script>
+<script src="https://problemsolutions.net/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.js?ver=12.3.1" id="the7-custom-scrollbar-js"></script>
+<script src="https://problemsolutions.net/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-optin-monster-e6fa11a9d13d20a7ece5.js" id="googlesitekit-events-provider-optin-monster-js" defer></script>
+<script src="https://problemsolutions.net/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-wpforms-ed443a3a3d45126a22ce.js" id="googlesitekit-events-provider-wpforms-js" defer></script>
+<script id="jetpack-stats-js-before">
+_stq = window._stq || [];
+_stq.push([ "view", JSON.parse("{\"v\":\"ext\",\"blog\":\"224657389\",\"post\":\"0\",\"tz\":\"0\",\"srv\":\"problemsolutions.net\",\"arch_err\":\"\\\/wp-content\\\/uploads\\\/2023\\\/04\\\/cropped-favicon-32x32.png\",\"j\":\"1:15.3.1\"}") ]);
+_stq.push([ "clickTrackerInit", "224657389", "0" ]);
+</script>
+<script src="https://stats.wp.com/e-202551.js" id="jetpack-stats-js" defer data-wp-strategy="defer"></script>
+<script src="https://problemsolutions.net/wp-content/themes/dt-the7/js/compatibility/elementor/the7-simple-posts.min.js?ver=12.3.1" id="the7-elements-simple-posts-js"></script>
+<script src="https://problemsolutions.net/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.min.js?ver=4.6.13" id="flatpickr-js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=explicit&amp;ver=3.33.2" id="elementor-recaptcha_v3-api-js"></script>
+<script src="https://problemsolutions.net/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.33.2" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://problemsolutions.net/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="https://problemsolutions.net/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/problemsolutions.net\/wp-admin\/admin-ajax.php","nonce":"86a5bdaa54","urls":{"assets":"https:\/\/problemsolutions.net\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/problemsolutions.net\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/problemsolutions.net\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="https://problemsolutions.net/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.33.2" id="elementor-pro-frontend-js"></script>
+<script src="https://problemsolutions.net/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.33.2" id="pro-elements-handlers-js"></script>
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--close" title="Close (Esc)" aria-label="Close (Esc)"></button>
+				<button class="pswp__button pswp__button--share" title="Share" aria-label="Share"></button>
+				<button class="pswp__button pswp__button--fs" title="Toggle fullscreen" aria-label="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--zoom" title="Zoom in/out" aria-label="Zoom in/out"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div> 
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)" aria-label="Previous (arrow left)">
+			</button>
+			<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)" aria-label="Next (arrow right)">
+			</button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

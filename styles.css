@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+/* HTML5 semantic element resets */
+main, header, footer, section, nav, address {
+    display: block;
+    font-style: normal;
+}
+
+/* Button reset for accessibility */
+button.contact-item {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+button.contact-item:focus-visible,
+.social-links a:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
 @keyframes gradientShift {
     0% {
         background-position: 0% 50%;
