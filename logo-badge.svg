@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 48" fill="none" role="img" aria-labelledby="ps-logo-title">
+  <title id="ps-logo-title">Problem Solutions logo</title>
+  <!-- Three discrete pieces from the official PS hosted logo. Transparent gaps
+       between shapes render through on any background. Paths taken verbatim
+       from the hosted wordmark SVG at problemsolutions.github.io / internal
+       static site (trimmed of the wordmark text, viewBox tightened to the
+       badge). -->
+
+  <!-- Middle football - brand-tertiary -->
+  <path d="M31.312 9.71729C26.4623 12.9217 23.4888 18.3989 23.4888 24.2472C23.4888 30.0955 26.4623 35.5717 31.312 38.7771C36.1618 35.5727 39.1362 30.0955 39.1362 24.2472C39.1362 18.3998 36.1627 12.9217 31.312 9.71729Z" fill="#2075BC"/>
+
+  <!-- Right moon - brand-dark-blue -->
+  <path d="M40.8263 5.13379C38.0627 5.13379 35.4388 5.72766 33.0676 6.78598C38.9348 10.6128 42.542 17.2016 42.542 24.2472C42.542 31.2928 38.9358 37.8825 33.0676 41.7093C35.4388 42.7686 38.0627 43.3615 40.8263 43.3615C51.3637 43.3615 59.9061 34.8046 59.9061 24.2472C59.9051 13.6907 51.3627 5.13379 40.8263 5.13379Z" fill="#105480"/>
+
+  <!-- Left moon - brand-secondary sky -->
+  <path d="M20.0308 24.2462C20.0308 17.2006 23.6379 10.6128 29.5051 6.78502C27.1339 5.72671 24.51 5.13379 21.7465 5.13379C11.2091 5.13379 2.6676 13.6907 2.6676 24.2472C2.6676 34.8046 11.2091 43.3615 21.7465 43.3615C24.51 43.3615 27.1339 42.7677 29.5051 41.7093C23.637 37.8815 20.0308 31.2918 20.0308 24.2462Z" fill="#29AAE1"/>
+</svg>
