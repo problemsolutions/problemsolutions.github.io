@@ -15,7 +15,7 @@ Static landing page — https://problemsolutions.github.io (auto-deploys on merg
 | `index.html` | Landing page + tagline rotation + copy-to-clipboard contact |
 | `styles.css` | All styling (gradient bg, animations, responsive) |
 | `logo.svg` | Company logo |
-| `favicon.png` | Browser icon |
+| `logo-badge.svg` | Browser favicon (SVG, icon-only badge) |
 | `404.html` | Custom 404 page |
 | `robots.txt` | SEO — allow all, point sitemap |
 | `sitemap.xml` | Single entry for github.io URL |
