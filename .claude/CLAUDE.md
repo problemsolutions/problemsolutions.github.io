@@ -1,75 +1,42 @@
 # Problem Solutions GitHub Pages
 
-## Project Overview
-Static landing page for Problem Solutions company. GitHub Pages deployment.
+Static landing page — https://problemsolutions.github.io (auto-deploys on merge to main).
 
-**Live URL:** https://problemsolutions.github.io
-**Main Site:** https://www.problemsolutions.net
+## Quick Start
 
-## Tech Stack
-- Static HTML5/CSS3/JS (vanilla)
-- No build tools - edit and push
-- GitHub Pages deployment (auto on push to main)
+**Local preview:** `python3 -m http.server 8000`
 
-## File Structure
-```
-index.html    # Main landing page
-styles.css    # All styles
-logo.svg      # Company logo
-favicon.png   # Browser icon
-```
+**Deploy:** Create PR against `main` (protected). Merging auto-deploys to GitHub Pages.
 
-## Development Workflow
+## Files
 
-### Local Preview
-```bash
-python3 -m http.server 8000
-# or
-npx serve .
-```
+| File | Purpose |
+|------|---------|
+| `index.html` | Landing page + tagline rotation + copy-to-clipboard contact |
+| `styles.css` | All styling (gradient bg, animations, responsive) |
+| `logo.svg` | Company logo |
+| `logo-badge.svg` | Browser favicon (SVG, icon-only badge) |
+| `404.html` | Custom 404 page |
+| `robots.txt` | SEO — allow all, point sitemap |
+| `sitemap.xml` | Single entry for github.io URL |
 
-### Deploy
-NOT ALLOWED: Push to `main` branch - will trigger GitHub Pages deploy automatically.
-MUST create PR against `main` for review.
+## Taglines
 
-## Content Guidelines
-
-### Taglines (rotating in JS)
-Located in `index.html` ~line 117:
+Rotating in JS (~line 117 in index.html):
 - "Enabling the Augmented Enterprise"
 - "We Make AI Usable"
 - "Software Excellence Since 2004"
 
-### Contact Info
-- Phone: 888.343.0569
-- Email: contact@problemsolutions.net
+## Quality Baseline
 
-### Social Links
-- LinkedIn, Twitter/X, Facebook, YouTube
+- HTML5 valid: `npx html-validate index.html`
+- Lighthouse 90+ (Chrome DevTools)
+- WCAG AA accessibility (contrast, alt text, semantic markup)
+- Respects `prefers-reduced-motion` in JS
 
-## Quality Checks
+## SEO & Metadata
 
-### Validate HTML
-```bash
-npx html-validate index.html
-```
-
-### Lighthouse Audit
-Run in Chrome DevTools > Lighthouse
-
-### Accessibility
-- All images have alt text
-- Semantic HTML structure
-- ARIA labels on interactive elements
-- Color contrast meets WCAG AA
-
-## SEO
-- Open Graph meta tags configured
-- Twitter Card meta tags configured
-- Schema.org structured data (Organization)
-- Canonical URL set
-
-## Git Workflow
-- Branch: `main` (protected)
-- PR required for changes
-- Auto-deploy on merge
+- Open Graph + Twitter Card meta tags
+- Schema.org Organization structured data
+- Canonical URL: https://problemsolutions.github.io/
+- Contact: 888.343.0569 | contact@problemsolutions.net
